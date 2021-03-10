@@ -1,0 +1,23 @@
+.login {
+  background: #FFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 53px 33px 37px;
+  display: flex;
+  flex-direction: column;
+  color: #424242;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__btn {
+    margin-left: auto;
+    display: inline-block;
+  }
+}

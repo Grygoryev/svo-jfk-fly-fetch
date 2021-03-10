@@ -1,0 +1,23 @@
+.logout-btn-box {
+  color: #1157A7;
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__title {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    margin-right: 20px;
+  }
+
+  &__icon {
+    color: currentColor;
+    width: 18px;
+    height: 18px;
+  }
+}

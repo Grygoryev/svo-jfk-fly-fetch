@@ -1,0 +1,79 @@
+.flights-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  &__title {
+    color: #424242;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  &__flight-type {
+    padding-right: 50px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-135deg);
+      width: 11px;
+      height: 11px;
+      border-left: 2px solid #A7A7A7;
+      border-bottom: 2px solid #A7A7A7;
+      border-radius: 2px;
+    }
+  }
+
+  &__travel-date {
+    color: #1157A7;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: 15px;
+
+  }
+}
+
+
+.datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 19px;
+}
+.datepicker-toggle-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background-image: url('../../img/calendar.svg');
+  background-size: 100%;
+}
+
+.datepicker-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.datepicker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+

@@ -1,0 +1,73 @@
+$font: 'Roboto', 'Arial', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: $font;
+}
+
+body, p, span, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background: linear-gradient(104.34deg, #3C4CAD -15.34%, #00C3FF 145.95%);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF;
+  padding: 5px 18px;
+  min-width: 116px;
+  min-height: 34px;
+
+  &:hover {
+    background: linear-gradient(104.34deg, #3C4CAD -15.34%, #00C3FF 145.95%);
+    box-shadow: 0 0 4px #99A0A3;
+  }
+
+  &:active {
+    background: linear-gradient(104.34deg, #5362BE -15.34%, #4AD5FF 145.95%);
+    border: 1.5px solid rgba(29, 138, 216, 0.3);
+  }
+}
+
+.input-box {
+  font-weight: 300;
+  color: #424242;
+  margin-bottom: 25px;
+
+  &__title {
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+
+  &__input {
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    padding: 5px 20px;
+    width: 100%;
+    min-height: 34px;
+
+    &.--error {
+      border: 1px solid #EB1717;
+    }
+  }
+
+  &__error-msg {
+    color: #EB1717;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+

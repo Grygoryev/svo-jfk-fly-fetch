@@ -1,0 +1,53 @@
+.flights-container {
+  width: 100%;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 65px 45px 50px;
+  box-shadow: 0 0 10px rgba(#000, 0.1);
+  border-radius: 15px;
+  background-color: #FFF;
+}
+
+.flights-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 83.85%);
+    z-index: 2;
+  }
+
+  &__img-box {
+    max-width: 160px;
+    border-radius: 20px;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+}
+
+.flights-favourite {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #424242;
+
+  span {
+    color: #1157A7;
+  }
+}

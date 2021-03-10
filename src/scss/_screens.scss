@@ -1,0 +1,28 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--login {
+    background-image: url('../img/air_bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &--flights {
+    align-items: flex-start;
+
+    .screen__container {
+      padding-top: 100px;
+    }
+  }
+
+  &__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
